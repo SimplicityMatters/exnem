@@ -1,23 +1,50 @@
-# Exnem
+# Nem2 SDK for Elixir
 
-A client library for the NEM Blockchain v2.0 (Catapult).
+A library for working with the NEM2 (Catapult) Blockchain.
+
+** NOTE: This is a work in progress and may change significantly. **
+
+## Features
+
+* KeyPair generation
+* Transactions
+    * Transfer
+    * Multi-sig Modify
+    * Mosaic Definition
+    * Mosaic Supply Change
+    * Register Namespace
+    * Aggregate Complete
+* Announce Transactions (Sync)
+* Announce Transactions (Async)
+* WebSocket Connections
+* Account Info
+* Namespace Info
+* Mosaic Info
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `exnem` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `exnem` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:exnem, "~> 0.1.0"}
+    {:exnem, github: "SimplicityMatters/exnem", branch: "master"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/exnem](https://hexdocs.pm/exnem).
+## TODO
+
+* Add examples
+* Support HashLock transactions
+* Support Announcing partial transactions
+* Support Cosignature transactions
+* Support SecretLock/Proof transactions
+* Complete support for reading from Catapult API
+
+## Contributions
+
+Contributions are welcomed! Open a pull request or issue and we'll happily work to integrate changes and address problems.
 
 License
 --
