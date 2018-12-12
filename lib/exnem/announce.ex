@@ -11,7 +11,7 @@ defmodule Exnem.Announce do
 
       a ->
         Logger.warn("[Catapult] Announcing complete transaction failed: #{inspect(a)}")
-        {:error, a}
+        a
     end
   end
 
